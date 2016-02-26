@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02F9A272B7FB78BAB2AFB988 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C499A2BEA16A00E4D5DCF597 /* libPods.a */; };
 		EB75641B1C7FE30D003C5EA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB75641A1C7FE30D003C5EA2 /* main.m */; };
 		EB75641E1C7FE30D003C5EA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB75641D1C7FE30D003C5EA2 /* AppDelegate.m */; };
 		EB7564211C7FE30D003C5EA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7564201C7FE30D003C5EA2 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		EB7564291C7FE30E003C5EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7564271C7FE30E003C5EA2 /* LaunchScreen.storyboard */; };
 		EB7564341C7FE30E003C5EA2 /* TWScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7564331C7FE30E003C5EA2 /* TWScrollViewTests.m */; };
 		EB75643F1C7FE30E003C5EA2 /* TWScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB75643E1C7FE30E003C5EA2 /* TWScrollViewUITests.m */; };
+		EB75644F1C7FE4A1003C5EA2 /* TWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB75644E1C7FE4A1003C5EA2 /* TWScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09774ABE7901D83A996DF110 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1B623BA40CE8AA40E02ACE54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C499A2BEA16A00E4D5DCF597 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7564161C7FE30D003C5EA2 /* TWScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB75641A1C7FE30D003C5EA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB75641C1C7FE30D003C5EA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		EB75643A1C7FE30E003C5EA2 /* TWScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB75643E1C7FE30E003C5EA2 /* TWScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWScrollViewUITests.m; sourceTree = "<group>"; };
 		EB7564401C7FE30E003C5EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB75644D1C7FE4A1003C5EA2 /* TWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWScrollView.h; sourceTree = "<group>"; };
+		EB75644E1C7FE4A1003C5EA2 /* TWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F9A272B7FB78BAB2AFB988 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		275D90BEEECA2AE8CB86EBAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C499A2BEA16A00E4D5DCF597 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D78FF8FD1BA552D958388CB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09774ABE7901D83A996DF110 /* Pods.debug.xcconfig */,
+				1B623BA40CE8AA40E02ACE54 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB75640D1C7FE30D003C5EA2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				EB7564321C7FE30E003C5EA2 /* TWScrollViewTests */,
 				EB75643D1C7FE30E003C5EA2 /* TWScrollViewUITests */,
 				EB7564171C7FE30D003C5EA2 /* Products */,
+				D78FF8FD1BA552D958388CB1 /* Pods */,
+				275D90BEEECA2AE8CB86EBAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +128,7 @@
 		EB7564181C7FE30D003C5EA2 /* TWScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				EB75644C1C7FE461003C5EA2 /* TWScrollView */,
 				EB75641C1C7FE30D003C5EA2 /* AppDelegate.h */,
 				EB75641D1C7FE30D003C5EA2 /* AppDelegate.m */,
 				EB75641F1C7FE30D003C5EA2 /* ViewController.h */,
@@ -140,6 +168,15 @@
 			path = TWScrollViewUITests;
 			sourceTree = "<group>";
 		};
+		EB75644C1C7FE461003C5EA2 /* TWScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				EB75644D1C7FE4A1003C5EA2 /* TWScrollView.h */,
+				EB75644E1C7FE4A1003C5EA2 /* TWScrollView.m */,
+			);
+			path = TWScrollView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB7564431C7FE30E003C5EA2 /* Build configuration list for PBXNativeTarget "TWScrollView" */;
 			buildPhases = (
+				387B509124395867D9B373A4 /* Check Pods Manifest.lock */,
 				EB7564121C7FE30D003C5EA2 /* Sources */,
 				EB7564131C7FE30D003C5EA2 /* Frameworks */,
 				EB7564141C7FE30D003C5EA2 /* Resources */,
+				7CEE08DECA503E6AE0BBFC16 /* Embed Pods Frameworks */,
+				FE2E484C68238F53785E32D5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +305,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		387B509124395867D9B373A4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CEE08DECA503E6AE0BBFC16 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE2E484C68238F53785E32D5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB7564121C7FE30D003C5EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +360,7 @@
 			files = (
 				EB7564211C7FE30D003C5EA2 /* ViewController.m in Sources */,
 				EB75641E1C7FE30D003C5EA2 /* AppDelegate.m in Sources */,
+				EB75644F1C7FE4A1003C5EA2 /* TWScrollView.m in Sources */,
 				EB75641B1C7FE30D003C5EA2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +498,7 @@
 		};
 		EB7564441C7FE30E003C5EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09774ABE7901D83A996DF110 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TWScrollView/Info.plist;
@@ -420,6 +510,7 @@
 		};
 		EB7564451C7FE30E003C5EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B623BA40CE8AA40E02ACE54 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TWScrollView/Info.plist;
@@ -496,6 +587,7 @@
 				EB7564451C7FE30E003C5EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB7564461C7FE30E003C5EA2 /* Build configuration list for PBXNativeTarget "TWScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +596,7 @@
 				EB7564481C7FE30E003C5EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB7564491C7FE30E003C5EA2 /* Build configuration list for PBXNativeTarget "TWScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +605,7 @@
 				EB75644B1C7FE30E003C5EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
